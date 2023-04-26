@@ -8,12 +8,17 @@ interface Post {
   userId: number;
 }
 
-const usePosts = () =>
+const usePosts = (userId: number | undefined) =>
   useQuery<Post[], Error>({
-    queryKey: ["posts"],
+    // here userID is parameter for this query. similar to dependencies array in useEffect.
+    queryKey: userId ? ["users", userId, "posts"] : ["posts"],
     queryFn: () =>
       axios
-        .get("https://jsonplaceholder.typicode.com/posts")
+        .get("https://jsonplaceholder.typicode.com/posts", {
+          params: {
+            userId,
+          },
+        })
         .then((res) => res.data),
     staleTime: 1 * 60 * 1000, //1 min
   });
