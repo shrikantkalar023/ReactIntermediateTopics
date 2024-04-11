@@ -34,3 +34,5 @@ You can find the project in which I will be implementing these topics at https:/
    - ⁠tdata- data we get from backend
    - ⁠error type
    - ⁠tvars- data that we send to backend
+
+5. **Reducer**:A fn that allows us to centralize state updates in a component. It takes in the current state and an action, and returns a new state.
