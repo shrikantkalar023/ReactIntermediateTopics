@@ -36,3 +36,7 @@ You can find the project in which I will be implementing these topics at https:/
    - ⁠tvars- data that we send to backend
 
 5. **Reducer**:A fn that allows us to centralize state updates in a component. It takes in the current state and an action, and returns a new state.
+
+6. Both **useState** and **useReducer** are used to manage **local state** in a component.
+
+7. **React Context**: Allows sharing data without passing it down through many components in the middle. React Context is like a truck for transporting a box. Inside that box we can 've some state.
