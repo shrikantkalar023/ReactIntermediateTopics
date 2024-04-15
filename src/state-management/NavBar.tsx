@@ -1,9 +1,11 @@
-import LoginStatus from "./LoginStatus";
+import LoginStatus from "./auth/LoginStatus";
+import { useTasks } from "./tasks";
 
 const NavBar = () => {
+  const { tasks } = useTasks();
   return (
     <nav className="navbar d-flex justify-content-between">
-      {/* <span className="badge text-bg-secondary">{tasks.length}</span> */}
+      <span className="badge text-bg-secondary">{tasks.length}</span>
       <LoginStatus />
     </nav>
   );

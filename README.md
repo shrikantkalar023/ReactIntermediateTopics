@@ -40,3 +40,5 @@ You can find the project in which I will be implementing these topics at https:/
 6. Both **useState** and **useReducer** are used to manage **local state** in a component.
 
 7. **React Context**: Allows sharing data without passing it down through many components in the middle. React Context is like a truck for transporting a box. Inside that box we can 've some state.
+
+8. As our app grows, instead of dividing our app by reducers, hooks, contexts etc, We should divide our app by **functional areas** like **auth, cart, products** etc.
