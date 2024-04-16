@@ -39,6 +39,10 @@ You can find the project in which I will be implementing these topics at https:/
 
 6. Both **useState** and **useReducer** are used to manage **local state** in a component.
 
-7. **React Context**: Allows sharing data without passing it down through many components in the middle. React Context is like a truck for transporting a box. Inside that box we can 've some state.
+7. **React Context**: Allows sharing data without passing it down through many components in the middle. React Context is like a truck for transporting a box. Inside that box we can 've some state. Think of react context as a **transport mechanism** for state.
 
 8. As our app grows, instead of dividing our app by reducers, hooks, contexts etc, We should divide our app by **functional areas** like **auth, cart, products** etc.
+
+9. Anytime something in context changes, all components that use that context will re-render. A context should only hold values that are **closely related** and tend to change together. A context should have a **single responsibility**.
+
+10. For **Server State**, use **React Query**. For **Client State**, use local state + React Context. If splitting up context doesn't make sense, or we are dealing with unnecessary re-renders, use **Zustand** or **Redux**.
