@@ -46,3 +46,5 @@ You can find the project in which I will be implementing these topics at https:/
 9. Anytime something in context changes, all components that use that context will re-render. A context should only hold values that are **closely related** and tend to change together. A context should have a **single responsibility**.
 
 10. For **Server State**, use **React Query**. For **Client State**, use local state + React Context. If splitting up context doesn't make sense, or we are dealing with unnecessary re-renders, use **Zustand** or **Redux**.
+
+11. **Layout Routes**: group routes to enforce layout and business rules in a single place.
